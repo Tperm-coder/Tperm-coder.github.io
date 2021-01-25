@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+}
+
+/* @keyframes animateBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto+Mono:ital@1&family=Staatliches&display=swap");
+::-webkit-scrollbar {
+  display: none;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border-style: dotted;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: rgb(116, 255, 236);
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
+  color: #191923;
+  padding: 1px;
+}
+.container {
+  color: #e0ffff;
+  width: 100vw;
+  height: 100vh;
+
+  font-family: "Comfortaa", cursive;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Staatliches", cursive;
+  font-size: x-large;
+
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr 100px;
+
+  gap: 10px;
+
+  background: linear-gradient(-225deg, #37d4ff, #00c8ff, #00b9ed, #00abdb);
+}
+
+.spanScores {
+  color: rgba(12, 77, 82, 0.294);
+  text-align: center;
+}
+
+.container div {
+  /* border: 1px solid black; */
+}
+
+.scramble {
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  font-size: 25pt;
+}
+
+.scores {
+  grid-row-start: 2;
+  grid-row-end: 6;
+  overflow: scroll;
+}
+
+.timeScore:hover {
+  background-color: #00abdb;
+  cursor: pointer;
+}
+
+.time {
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  grid-row-start: 2;
+  grid-row-end: 6;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto+Mono:ital@1&display=swap");
+.actual-time {
+  font-family: "Comfortaa", cursive;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Staatliches", cursive;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  font-size: 95pt;
+}
+
+.buttons {
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.InnerButtons-style {
+  text-align: center;
+  background-color: #37d4ff;
+  border-radius: 5px;
+}
+
+.InnerButtons-style:hover {
+  background-color: #00abdb;
+  cursor: pointer;
+}
+
+.inspection {
+  grid-column-start: 7;
+  grid-column-end: 9;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="logic.js"></script>
+  </head>
+  <body onclick="deleteTime(event)">
+    <div class="container">
+      <div class="gap"></div>
+      <div class="scramble">
+        <span id="actual-scramble" class="actual-scramble"
+          >D U2 B' U2 B D2 F D2 B D2 U2 R2 F' U' B2 R B' L2 U2 R2
+        </span>
+      </div>
+      <div class="gap"></div>
+      <div class="scores">
+        <table>
+          <thead id="thead">
+            <tr>
+              <th>n</th>
+              <th>time</th>
+              <th>Ao5</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="table"></tbody>
+        </table>
+      </div>
+      <div class="time">
+        <div id="actual-time" class="actual-time">00:00</div>
+      </div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="buttons">
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="InnerButtons-style" onclick="plusTwo()">+2</div>
+        <div class="InnerButtons-style" onclick="DNF()">DNF</div>
+        <div class="InnerButtons-style showtime" onclick="showTimeF()">
+          Show time
+        </div>
+        <div class="InnerButtons-style clear" onclick="Clear()">Clear</div>
+        <div class="InnerButtons-style inspection" onclick="inspectionF()">
+          allow inspection
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
