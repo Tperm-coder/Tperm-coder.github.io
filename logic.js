@@ -30,6 +30,12 @@ var gen = [
 document.addEventListener("DOMContentLoaded", getLastScores);
 
 function getLastScores() {
+  if (localStorage.getItem("counter") === null) {
+    localStorage.setItem("counter", "0");
+  }
+  if (localStorage.getItem("currentSolves") === null) {
+    localStorage.setItem("currentSolves", "");
+  }
   var x = parseInt(localStorage.getItem("counter"));
   counter = x;
   document.getElementById("table").innerHTML = localStorage.getItem(
@@ -320,6 +326,7 @@ function plusTwo() {
     .textContent;
   currentTime = parseFloat(currentTime);
   currentTime = currentTime + 2;
+  currentTime = currentTime.toFixed(3);
   document.getElementsByClassName("actual-time")[0].textContent = currentTime;
   document.getElementsByClassName(counter)[1].textContent = currentTime;
   Ao5();
